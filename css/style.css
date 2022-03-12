@@ -1,0 +1,287 @@
+/* GLOBAL */
+
+* {
+    color: #272727;
+    font-family: helvetica;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    background-color: #6175a1 !important;
+    color: white;
+    border-radius: 20px !important;
+}
+
+.btn:hover {
+    background-color: white !important;
+    color: #6175a1;
+}
+
+
+/* BODY */
+
+body {
+    display: flex;
+    flex-direction: column;
+
+    background: #ffffff;
+
+    min-height: 100vh;
+}
+
+.list {
+    list-style: square;
+}
+
+#no_city_msg {
+    font-size: 20px;
+    text-align: center;
+
+    margin-top: 30px;
+    margin-bottom: 50px;
+    padding: 20px 40px;
+}
+
+#no_city_msg a {
+    color: #455985;
+    font-weight: bold;
+}
+
+/* CARDS */
+
+#cards_list {
+    margin: 20px;
+}
+
+.card {
+    margin: 20px;
+
+    min-width: 20%;
+    width: 500px;
+    max-width: 90%;
+
+    min-height: 20%;
+    height: 525px;
+    max-height: 40%;
+}
+
+.daycard {
+    width: 400px;
+    max-width: 90%;
+
+    height: 400px;
+    max-height: 40%;
+}
+
+.card_style {
+    background-color: #aac5db !important;
+}
+
+#do_button {
+    margin: 5px;
+    padding: 8px 2px;
+
+    border-radius: 100px;
+    border: none;
+
+    height: 50px;
+    width: 50px;
+
+    background-color: #6175a1;
+    color: white;
+
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    font-style: normal !important;
+}
+
+#do_button:hover { 
+    color: #7090aa;
+    background-color: #e6e9eb;
+}
+
+.weather_image {
+    height: 150px !important;
+    width: 150px !important;
+    margin-bottom: -15px;
+}
+
+img {
+    margin-right: 5px;
+    height: 35px;
+    width: auto;
+
+    vertical-align:middle;
+    align-self: center;
+}
+
+.icon {
+    margin-right: 0px;
+    margin-left: -10px;
+    height: 60px;
+}
+
+
+/* LINKS */
+
+#go_to_previsions a:link {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#go_to_previsions a:visited {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#go_to_previsions a:hover {
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#go_to_previsions a:active {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+/* INPUT */
+
+/* label color */
+.input-field label {
+    color: #6175a1 !important;
+}
+/* label focus color */
+.input-field input[type=text]:focus + label {
+    color: #6175a1 !important;
+}
+/* label underline focus color */
+.input-field input[type=text]:focus {
+    border-bottom: 1px solid #6175a1 !important;
+    box-shadow: 0 1px 0 0 #6175a1 !important;
+}
+/* valid color */
+.input-field input[type=text].valid {
+    border-bottom: 1px solid #6175a1 !important;
+    box-shadow: 0 1px 0 0 #6175a1 !important;
+}
+/* invalid color */
+.input-field input[type=text].invalid {
+    border-bottom: 1px solid #6175a1 !important;
+    box-shadow: 0 1px 0 0 #6175a1 !important;
+}
+/* icon prefix focus color */
+.input-field .prefix.active {
+    color: #6175a1 !important;
+}
+
+
+/* VILLES */
+
+#villes {
+    align-items: center;
+    margin: 30px 50px 30px 50px;
+}
+
+#villes h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+#validate_cities_button {
+    margin-left: 5px;
+    padding:2px;
+
+    border:none;
+
+    color: #ffffff;
+    background-color: #7090aa;
+
+    width: 250px;
+
+    font-weight: bold;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-align: center;
+    
+    vertical-align: middle;
+}
+
+.cadre {
+    margin-left: auto;
+    margin-right: auto;
+
+    padding: 10px 60px 50px 60px;
+
+    width:500px;
+    min-width: 40%;
+    max-width: 90%;
+
+    height: fit-content;
+
+    border-radius: 15px;
+    background: #bbd2e6;
+}
+
+
+/* NAVIGATION BAR */
+
+#logo {
+    margin: 5px 10px;
+    height: 50px;
+}
+
+.topnav {
+    margin-bottom: 30px;
+    padding: 5px 10px;
+
+    height: fit-content;
+
+    background-color: #333;
+    overflow: hidden;
+}
+
+.topnav a {
+    padding: 14px 30px;
+    margin: 0px 5px;
+
+    min-width: 80px;
+
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+    color: #f2f2f2;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: #7090aa;
+    color: white;
+}
+
+
+/* FOOTER */
+
+footer {
+    margin-top: auto;
+    padding: 5px 20px;
+
+    border-top: solid 30px #ffffff;
+
+    background: #7090aa;
+}
+
+footer p {
+    text-align: center;
+    color: #ffffff;
+}

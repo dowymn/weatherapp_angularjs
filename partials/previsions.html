@@ -1,0 +1,28 @@
+<div>
+
+    <h2 class="center">{{city.name}}</h2>
+
+    <ul class="row">
+        <li ng-repeat="x in city.days">
+            
+            <div id="cards_list" class="card daycard col card-panel hoverable card_style">
+
+                <div class="center">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="weather_image" src={{x.image}}>
+                    </div>
+                </div>
+
+                <div class="card-content">
+                    <span class="card-title grey-text text-darken-4">{{x.name}}</span>
+                    <p><img class="icon" src={{x.image}}>Météo : {{x.description}}</p>
+                    <p><img src="./images/other/wi-thermometer.svg">Température : {{x.temperature}} °C</p>
+                    <p><img src="./images/other/wi-thermometer.svg">Min temp : {{x.mintemp}} °C</p>
+                    <p><img src="./images/other/wi-thermometer.svg">Max temp : {{x.maxtemp}} °C</p>
+                </div>
+            </div>
+
+        </li>
+    </ul>
+
+</div>

@@ -1,0 +1,51 @@
+<div>
+
+    <div id="no_city_msg" class="cadre" ng-hide="hideNoCityMsg">
+
+        <p>Pour afficher la météo des villes de votre choix, allez dans l'onglet <a href="#!/villes">Villes</a> et entrez le nom des lieux souhaités.</p>
+    
+    </div>
+
+    <ul class="row">
+        <li ng-repeat="x in villes">
+            
+            <div id="cards_list" class="card col card-panel hoverable card_style" >
+
+                <div class="center">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="weather_image" src={{x.image}}>
+                    </div>
+                </div>
+
+                <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">{{x.name}}<i id="do_button" class="right waves-effect waves-light btn">+</i></span>
+                    <p><img class="icon" src={{x.image}}>Météo : {{x.description}}</p>
+                    <p><img src="./images/other/wi-thermometer.svg">Température : {{x.temperature}} °C</p>
+                    <p><img src="./images/other/wi-strong-wind.svg">Vitesse du vent : {{x.windspeed}} m/s</p>
+                    <br/>
+                    <br/>
+                    <a id="go_to_previsions" class="waves-effect waves-light btn" href="#!/previsions/{{x.id}}">Voir les prévisions sur 7 jours</a>
+                    <br/><br/>
+                    <button id={{x.id}} class="waves-effect waves-light btn" onclick=deleteCity(this.id)>Supprimer la ville</button>
+                    <br/>
+                </div>
+                
+                <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">{{x.name}}<i id="do_button" class="right waves-effect waves-light btn">x</i></span>
+                    <p><img class="icon" src={{x.image}}>Météo : {{x.description}}</p>
+
+                    <p><img src="./images/other/wi-thermometer.svg">Température : {{x.temperature}} °C</p>
+                    <p><img src="./images/other/wi-thermometer.svg">Temp min : {{x.mintemp}} °C</p>
+                    <p><img src="./images/other/wi-thermometer.svg">Temp max : {{x.maxtemp}} °C</p>
+
+                    <p><img src="./images/other/wi-barometer.svg">Pression : {{x.pressure}} hPa</p>
+                    <p><img src="./images/other/wi-humidity.svg">Humidité : {{x.humidity}} %</p>
+                    <p><img src="./images/other/wi-strong-wind.svg">Vitesse du vent : {{x.windspeed}} m/s</p>
+                    <p><img src="./images/other/wi-wind-deg.svg">Orientation du vent : {{x.winddeg}} °</p>
+                </div>
+            </div>
+
+        </li>
+    </ul>
+
+</div>

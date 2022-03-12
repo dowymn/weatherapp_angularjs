@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+    
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+
+        <title>Weather App</title>
+        <link rel="stylesheet" href="./css/style.css">
+
+        <!-- IMPORTS -->
+        <script type="text/javascript" src="node_modules/angular/angular.js"></script>
+        <script type="text/javascript" src="node_modules/angular-route/angular-route.js"></script>
+        <script type="text/javascript" src="node_modules/materialize-css/dist/js/materialize.js"></script>
+        <link rel="stylesheet" href="node_modules/materialize-css/dist/css/materialize.css" />
+        
+        <script src="js/app.js"></script>
+        <script src="js/controllers/controller.js"></script>
+
+    </head>
+
+    <header>
+
+        <div class="topnav">
+            <img id="logo" src="./images/logo.png"/>
+            <a id="home" class="waves-effect waves-light" href="/">Accueil</a>
+            <a id="contact" class="waves-effect waves-light" href="#!/previsions">Previsions</a>
+            <a id="help" class="waves-effect waves-light" href="#!/villes">Villes</a>
+        </div> 
+
+    </header>
+
+    <body ng-app="weatherApp">
+        
+        <div ng-view></div>
+
+    </body>
+
+    <footer>
+
+        <p>WeatherApp est une application permettant de consulter la météo du jour pour une ville donnée.</p> 
+        <p>Elle a été réalisée dans le cadre d'un TP de developpement web.</p>
+
+    </footer>
+
+
+</html>

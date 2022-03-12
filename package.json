@@ -1,0 +1,24 @@
+{
+  "name": "meteoapp",
+  "version": "1.0.0",
+  "description": "This weather application has been realized during a web development course.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dowymn/weatherapp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dowymn/weatherapp/issues"
+  },
+  "homepage": "https://github.com/dowymn/weatherapp#readme",
+  "dependencies": {
+    "angular": "^1.8.2",
+    "angular-route": "^1.8.2",
+    "materialize-css": "^1.0.0"
+  }
+}
